@@ -15,7 +15,7 @@ class ShowCog(commands.Cog):
 
     @commands.command()
     async def show(self, ctx):
-        embed = discord.Embed(title="射殺予定", description="snipebotの通話切断予定表です")
+        embed = discord.Embed(title="切断予定", description="SpaceLaserの通話切断予定表です")
 
         for task in self.tasks[ctx.guild.id]:
             embed.add_field(
