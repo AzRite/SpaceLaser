@@ -114,7 +114,7 @@ class SlashCmdCog(commands.Cog):
 
     @cog_ext.cog_slash(name="schedule", description="通話の切断予定を表示します")
     async def schedule(self, ctx: SlashContext):
-        embed = discord.Embed(title="射殺予定", description="snipebotの通話切断予定表です")
+        embed = discord.Embed(title="切断予定", description="SpaceLaserの通話切断予定表です")
 
         for task in self.tasks[ctx.guild_id]:
             embed.add_field(
